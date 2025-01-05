@@ -1,3 +1,8 @@
+package test;
+
+import main.callback.AddProductRequest;
+import main.callback.DiscountPolicy;
+import main.callback.ProductService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,6 +15,8 @@ public class practiceTest {
     void setUp() {
         productservice = new ProductService();
     }
+
+
     @Test
     @DisplayName("주문해보자")
     void order() throws Exception {
@@ -17,9 +24,7 @@ public class practiceTest {
         final AddProductRequest request = getAddProductRequest();
         productservice.addProduct(request); 
         //when
-
         //then
-
     }
 
     private static AddProductRequest getAddProductRequest() {

@@ -1,3 +1,0 @@
-enum DiscountPolicy {
-    NONE
-}

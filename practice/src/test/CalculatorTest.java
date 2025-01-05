@@ -1,7 +1,9 @@
+package test;
+
+import main.callback.Calculator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -12,7 +14,7 @@ class CalculatorTest {
     @BeforeEach
     void setUp() {
         calculator = new Calculator();
-        FILE_PATH = getClass().getResource("a.txt").getPath();
+        FILE_PATH = getClass().getResource("../a.txt").getPath();
     }
 
     @Test
